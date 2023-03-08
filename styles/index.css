@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    
+    font-size: 62.5%;
+    --bg-fundoErro:#ff0000;
+    --bg-fundoForm:#EEEEEE;
+    --tt-colorForm:#2E0249;
+    --tt-colorNav:#FFFFFF;
+    --tt-colorSpan:#A91079;
+    --bt-fundoBtn:#A91079;
+    --grad-pink-light: linear-gradient(29.83deg,#a91079 0%,#f866c9 100%);
+
+}
+main{
+    position: relative;
+    /* height: 100vh; */
+    display: flex;
+    place-content: center;
+    padding: 6.4rem;
+    gap: 50px;
+
+    /* width: min(144.0rem, 90%); */
+    /* gap: 90px ; */
+}
+nav{
+    color: var(--bg-fundoForm);
+    width:min(51.2rem,90%);
+    
+}
+body{
+    background-color:var(--tt-colorForm);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size:4.8rem;
+    font-weight: bold;
+}
+p, span{
+    color: var(--tt-colorSpan);
+    margin-bottom: 5rem;
+}
+
+
+
+.info .fone{
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.info a{
+    text-decoration: none;
+    font-size: 2.0rem;
+    color: var(--tt-colorNav);
+}
+.info li{
+    margin-top: 1rem;
+    list-style: none;
+
+    width: max(43.5rem);
+    display: flex;
+    gap: 1.6rem;
+}
+
+
+
+.icone{
+    display: flex;
+    align-items: center;
+
+
+    margin-top: 14.0rem;
+}
+.icone li{
+    list-style: none;
+}
+.icone .instagram{
+    margin-right: 4.0rem;
+    margin-left: 4.0rem;
+}
+
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+form{
+    padding: 4.8rem;
+    background-color:var(--bg-fundoForm);
+    border-radius: 24px;
+
+    position: relative;
+    width:min(58.0rem, 90%) ;
+}  
+fieldset{
+    border: none;
+    margin-top: 10px;
+} 
+form input{
+    width: min(60.0rem,90%);
+    height: min(44px);
+    
+    border: 1px solid var(--tt-colorSpan);
+    border-top:none;
+    border-left: none;
+    border-right: none;
+
+    background-color: var(--bg-fundoForm);
+}
+form .notas{
+    display: flex;
+    gap: 8px;
+    width: min(31.0rem,90%);
+
+    margin-top: 10px;
+}
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+
+form button{
+   background: var(--grad-pink-light);
+   color: var(--bg-fundoForm); 
+   font-size: 2.0rem;
+   font-weight: 500;
+
+   border: none;
+
+
+   display: flex;
+   align-items: center;
+   place-content: center;
+   gap: 16px;
+
+   padding: 15px 20px;
+   width: 20.5rem;
+
+   position: absolute;
+   bottom: 3.8rem;
+
+   cursor: pointer;
+}
+/* ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
+
+.screen2.open{
+   opacity: 1;
+   visibility: visible; 
+}
+.screen2{
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+    
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden; 
+}
+.card{
+    /* padding: 2.8rem 6.4rem 6.4rem; */
+    padding: 30px;
+    background: rgb(84, 83, 83);
+    width: 35.8rem;
+    /* margin-inline: auto; */
+    box-shadow: 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* place-items: center; */
+    
+}
+.topCard{
+    background: var(--bg-fundoForm);
+    
+    position: absolute;
+    top: 0;
+    
+    height: 50px;
+    width: 100%;
+
+    border-radius:  0.6rem 0.6rem 0 0;
+}
+.card button{
+    
+    float: right;
+    margin: 4px;
+
+    border: none;
+    display: grid;
+    justify-content: center;
+    
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+}
+.modal img{
+    position: absolute;
+    top: 12px;
+}
+.modal span{
+    margin-top: 100px;
+    color: var(--bg-fundoForm);
+
+}
+input:invalid{
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+/*;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;*/
+
+dialog{
+    background-color:var(--bg-fundoErro);
+    color: var(--bg-fundoForm);
+
+    position: absolute;
+    top: 0px;
+    
+    width: 100%;
+    height: 34px;
+    padding: 5px;
+
+    border: none;
+    text-align: center;
+    font-weight: bold;
+
+    transform: translateY(-30);
+    transition: transform .5s;
+}
+
+
+
+
+
+@media (max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        height: 51.0rem;
+    }
+}
+
+@media (max-width:430px){
+    main{
+        padding: 10px;
+    }
+    form{
+      width: 300px;  
+    }
+}

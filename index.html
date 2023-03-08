@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>ifmg.edu.br</title>
+</head>
+<body>
+    
+    <main>
+
+        <dialog>
+            Digite uma NOTA de 0 a 100
+        </dialog>
+        
+        <nav>
+            <div>
+                <h1>PROCESSO SELETIVO <br> IFMG</h1>
+                <p><span>CURSOS TÉCNICOS <br> E SUPERIORES</span></p>
+            </div>
+    
+            <ul class="info">
+               <li>
+                <img src="./complemento/Envelope.svg" alt="">
+                <a href="#">vestibular@ifmg.edu.br.</a>
+               </li> 
+               <li class="fone">
+                <img src="./complemento/Telephone.svg" alt="">
+                <a href="#">+11 4003-5708</a>
+               </li>
+               <li>
+                <img src="./complemento/Vector.svg" alt="">
+                <a href="#">Sede: Avenida Santo Amaro - 1239</a>
+               </li>
+            </ul>
+    
+            <ul class="icone">
+                <li><a href="#"><img src="./complemento/iconFace.svg" alt=""></li></a>
+                <li class="instagram"><a href="#"><img src="./complemento/iconInst.svg" alt=""></li></a>
+                <li><a href="#"><img src="./complemento/twitterIcon.svg" alt=""></li></a>
+            </ul>
+        </nav>
+        
+
+        <form action="">
+            <fieldset>
+                INSCREVA-SE AGORA <br>
+                <fieldset>Nome do usuário
+                    <input type="text" id="nick" required>
+                </fieldset> 
+                <fieldset>Email
+                    <input type="email" name="" id="email">
+                </fieldset>
+                Nota do Teste
+                <fieldset class="notas">
+                    <input type="number" id="nota1" placeholder="Teste-Teórico">
+                    <input type="number" id="nota2" placeholder="Teste-Prático">
+                </fieldset>
+            </fieldset>
+
+            <button onclick="btVerificar(event)"><img src="./complemento/VerificarIMG.svg" alt=""> Verificar</button>
+            
+        </form>
+    
+        <div class="screen2">
+            <div class="modal card">
+                <div class="topCard"><button class="voltar"><img src="./complemento/btnClose.svg" alt=""></button></div>
+                <!-- <button class="voltar"><img src="./complemento/btnClose.svg" alt=""></button> -->
+                <img class="imagem" src="./complemento/aprovado.png" width="74px" alt="">
+                <span class="resultado"> (ERRO) Digite sua nota!</span>
+            </div>
+        </div>
+    </main>
+    
+    
+
+    
+</body>
+<script src="./script/index.js"></script>
+</html>
